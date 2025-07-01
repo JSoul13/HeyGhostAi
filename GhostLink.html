@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Link - Haunted Locations Database</title>
+    <meta name="description" content="Discover and share verified haunted locations worldwide with Ghost Link. Find nearby paranormal hotspots with detailed investigation reports and community insights.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Hey Ghost Entity" class="logo-icon">
+                <span class="logo-text">Hey Ghost</span>
+                <span class="logo-badge">PRO</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Platform</a></li>
+                <li><a href="demo.html" class="nav-link">Live Demo</a></li>
+                <li><a href="ghost-link.html" class="nav-link active">Locations</a></li>
+                <li><a href="my-entity.html" class="nav-link">AI Analysis</a></li>
+                <li><a href="signup.html" class="nav-link cta-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="ghost-link-main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="ghost-link-hero">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">Global Paranormal Database</span>
+                    </div>
+                    <h1>
+                        <span class="title-line-1">Discover Haunted</span>
+                        <span class="title-line-2">Locations Worldwide</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Access the world's most comprehensive database of verified haunted locations. 
+                        Find nearby paranormal hotspots, read investigation reports, and share your discoveries with the community.
+                    </p>
+                    
+                    <div class="search-bar">
+                        <div class="search-input-group">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="M21 21l-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="location-search" placeholder="Search locations, cities, or types of hauntings...">
+                            <button class="search-btn">
+                                <span>Search</span>
+                            </button>
+                        </div>
+                        <div class="search-filters">
+                            <select id="location-type">
+                                <option value="all">All Types</option>
+                                <option value="residential">Residential</option>
+                                <option value="historical">Historical Sites</option>
+                                <option value="cemetery">Cemeteries</option>
+                                <option value="hospital">Hospitals/Asylums</option>
+                                <option value="hotel">Hotels</option>
+                                <option value="theater">Theaters</option>
+                                <option value="school">Schools</option>
+                                <option value="church">Churches</option>
+                            </select>
+                            <select id="activity-level">
+                                <option value="all">All Activity Levels</option>
+                                <option value="high">High Activity</option>
+                                <option value="medium">Medium Activity</option>
+                                <option value="low">Low Activity</option>
+                                <option value="extreme">Extreme Activity</option>
+                            </select>
+                            <select id="distance">
+                                <option value="all">Any Distance</option>
+                                <option value="5">Within 5 miles</option>
+                                <option value="10">Within 10 miles</option>
+                                <option value="25">Within 25 miles</option>
+                                <option value="50">Within 50 miles</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-stats">
+                        <div class="stat">
+                            <span class="stat-number">15,847</span>
+                            <span class="stat-label">Verified Locations</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">42,391</span>
+                            <span class="stat-label">Investigation Reports</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">128</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Locations -->
+            <section class="featured-locations">
+                <div class="section-header">
+                    <h2>Featured Haunted Locations</h2>
+                    <p>Explore some of the most actively investigated paranormal sites around the world</p>
+                </div>
+                
+                <div class="locations-grid">
+                    <div class="location-card featured">
+                        <div class="location-image">
+                            <img src="https://thumbs.dreamstime.com/b/spooky-victorian-haunted-house-glowing-foggy-night-bats-flying-overhead-ai-generated-scary-windows-335264324.jpg" alt="Waverly Hills Sanatorium">
+                            <div class="activity-badge extreme">Extreme Activity</div>
+                        </div>
+                        <div class="location-content">
+                            <div class="location-header">
+                                <h3>Waverly Hills Sanatorium</h3>
+                                <div class="location-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-count">(1,247 reports)</span>
+                                </div>
+                            </div>
+                            <div class="location-meta">
+                                <span class="location-type">Historical Medical</span>
+                                <span class="location-distance">2.3 miles away</span>
+                            </div>
+                            <p class="location-description">
+                                Former tuberculosis hospital with documented extreme paranormal activity. Multiple spirits identified including medical staff and patients. High EMF readings throughout facility.
+                            </p>
+                            <div class="location-phenomena">
+                                <span class="phenomenon">Full Apparitions</span>
+                                <span class="phenomenon">Disembodied Voices</span>
+                                <span class="phenomenon">Temperature Drops</span>
+                                <span class="phenomenon">Shadow Figures</span>
+                            </div>
+                            <div class="location-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Last Investigation:</span>
+                                    <span class="stat-value">3 days ago</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Success Rate:</span>
+                                    <span class="stat-value">94%</span>
+                                </div>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">View Details</button>
+                                <button class="btn btn-outline">Start Investigation</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://thumbs.dreamstime.com/b/corridor-abandoned-hospital-scary-dark-passage-old-building-corridor-abandoned-hospital-scary-dark-passage-old-338000540.jpg?w=992" alt="Eastern State Penitentiary">
+                            <div class="activity-badge high">High Activity</div>
+                        </div>
+                        <div class="location-content">
+                            <div class="location-header">
+                                <h3>Eastern State Penitentiary</h3>
+                                <div class="location-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-count">(892 reports)</span>
+                                </div>
+                            </div>
+                            <div class="location-meta">
+                                <span class="location-type">Historical Prison</span>
+                                <span class="location-distance">15.7 miles away</span>
+                            </div>
+                            <p class="location-description">
+                                Historic penitentiary with 150+ years of documented paranormal activity. Former inmates and guards frequently contacted through spirit communication sessions.
+                            </p>
+                            <div class="location-phenomena">
+                                <span class="phenomenon">Cell Block Hauntings</span>
+                                <span class="phenomenon">Unexplained Sounds</span>
+                                <span class="phenomenon">EMF Spikes</span>
+                            </div>
+                            <div class="location-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Last Investigation:</span>
+                                    <span class="stat-value">1 week ago</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Success Rate:</span>
+                                    <span class="stat-value">78%</span>
+                                </div>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">View Details</button>
+                                <button class="btn btn-outline">Start Investigation</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://img.freepik.com/premium-photo/eerie-image-old-crumbling-theater-with-torn-red-velvet-seats-broken-stage_1150043-5984.jpg" alt="The Stanley Hotel">
+                            <div class="activity-badge medium">Medium Activity</div>
+                        </div>
+                        <div class="location-content">
+                            <div class="location-header">
+                                <h3>The Stanley Hotel</h3>
+                                <div class="location-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-count">(634 reports)</span>
+                                </div>
+                            </div>
+                            <div class="location-meta">
+                                <span class="location-type">Historic Hotel</span>
+                                <span class="location-distance">45.2 miles away</span>
+                            </div>
+                            <p class="location-description">
+                                Famous hotel that inspired "The Shining" with documented paranormal activity in specific rooms. Piano music and children's laughter commonly reported.
+                            </p>
+                            <div class="location-phenomena">
+                                <span class="phenomenon">Piano Music</span>
+                                <span class="phenomenon">Children's Voices</span>
+                                <span class="phenomenon">Room 217</span>
+                            </div>
+                            <div class="location-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Last Investigation:</span>
+                                    <span class="stat-value">5 days ago</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Success Rate:</span>
+                                    <span class="stat-value">67%</span>
+                                </div>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">View Details</button>
+                                <button class="btn btn-outline">Start Investigation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location Categories -->
+            <section class="location-categories">
+                <div class="section-header">
+                    <h2>Explore by Category</h2>
+                    <p>Find locations that match your investigation interests and experience level</p>
+                </div>
+                
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">🏚️</div>
+                        <h3>Abandoned Buildings</h3>
+                        <p>Hospitals, asylums, schools, and other abandoned structures with residual energy</p>
+                        <div class="category-stats">
+                            <span>2,847 locations</span>
+                            <span>•</span>
+                            <span>High activity rate</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🏰</div>
+                        <h3>Historic Sites</h3>
+                        <p>Castles, battlefields, and historic buildings with centuries of documented activity</p>
+                        <div class="category-stats">
+                            <span>1,923 locations</span>
+                            <span>•</span>
+                            <span>Ancient spirits</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">⚰️</div>
+                        <h3>Cemeteries</h3>
+                        <p>Graveyards and burial grounds known for spirit communication and apparitions</p>
+                        <div class="category-stats">
+                            <span>3,456 locations</span>
+                            <span>•</span>
+                            <span>Spirit communication</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🏨</div>
+                        <h3>Hotels & Inns</h3>
+                        <p>Historic accommodations where guests and staff report ongoing paranormal encounters</p>
+                        <div class="category-stats">
+                            <span>987 locations</span>
+                            <span>•</span>
+                            <span>Guest experiences</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🎭</div>
+                        <h3>Theaters</h3>
+                        <p>Performance venues with resident spirits, often former performers and staff</p>
+                        <div class="category-stats">
+                            <span>543 locations</span>
+                            <span>•</span>
+                            <span>Performer spirits</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🏡</div>
+                        <h3>Private Residences</h3>
+                        <p>Homes and properties with family histories and ongoing paranormal activity</p>
+                        <div class="category-stats">
+                            <span>4,123 locations</span>
+                            <span>•</span>
+                            <span>Family histories</span>
+                        </div>
+                        <button class="btn btn-outline">Explore Category</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investigation Tools -->
+            <section class="investigation-tools">
+                <div class="tools-content">
+                    <div class="tools-text">
+                        <h2>Advanced Investigation Tools</h2>
+                        <p>Ghost Link integrates seamlessly with Hey Ghost Pro to provide comprehensive investigation support for every location in our database.</p>
+                        
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="https://cdn.abacus.ai/images/c9146482-08b2-40aa-b8d4-1f2c8309b49a.png" alt="4K Recording">
+                                </div>
+                                <div class="tool-content">
+                                    <h4>4K Documentation</h4>
+                                    <p>Record your investigations in ultra-high definition with location-specific metadata and GPS coordinates.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="https://cdn.abacus.ai/images/0da87d48-51f5-4293-8fbb-7c15463e8c64.png" alt="EMF Detection">
+                                </div>
+                                <div class="tool-content">
+                                    <h4>Historical EMF Data</h4>
+                                    <p>Compare your readings with historical EMF patterns recorded at each location by previous investigators.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="https://cdn.abacus.ai/images/d279cc31-66a7-4e27-9fe4-ba7fb6a8f58f.png" alt="Voice Analysis">
+                                </div>
+                                <div class="tool-content">
+                                    <h4>Spirit Communication Logs</h4>
+                                    <p>Access databases of known spirits at each location with recommended communication approaches and questions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tools-cta">
+                            <a href="demo.html" class="btn btn-primary">Try Investigation Tools</a>
+                            <a href="signup.html" class="btn btn-secondary">Get Full Access</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tools-visual">
+                        <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Ghost Link Integration" class="tools-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Features -->
+            <section class="community-features">
+                <div class="section-header">
+                    <h2>Join the Global Investigation Community</h2>
+                    <p>Connect with thousands of paranormal investigators worldwide and share your discoveries</p>
+                </div>
+                
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="community-icon">📝</div>
+                        <h3>Submit Locations</h3>
+                        <p>Add new haunted locations to our database and help expand the global paranormal map. Include photos, history, and investigation tips.</p>
+                        <ul>
+                            <li>✓ Location verification process</li>
+                            <li>✓ Historical research assistance</li>
+                            <li>✓ Community peer review</li>
+                            <li>✓ Credit for discoveries</li>
+                        </ul>
+                        <button class="btn btn-outline">Submit Location</button>
+                    </div>
+                    
+                    <div class="community-card">
+                        <div class="community-icon">📊</div>
+                        <h3>Share Reports</h3>
+                        <p>Upload your investigation findings and help build the world's largest paranormal research database with evidence and analysis.</p>
+                        <ul>
+                            <li>✓ Evidence verification</li>
+                            <li>✓ Scientific peer review</li>
+                            <li>✓ Community feedback</li>
+                            <li>✓ Research collaboration</li>
+                        </ul>
+                        <button class="btn btn-outline">Share Report</button>
+                    </div>
+                    
+                    <div class="community-card">
+                        <div class="community-icon">👥</div>
+                        <h3>Team Up</h3>
+                        <p>Find investigation partners in your area and join organized group investigations at high-activity locations.</p>
+                        <ul>
+                            <li>✓ Local investigator matching</li>
+                            <li>✓ Skill-based team formation</li>
+                            <li>✓ Group investigation planning</li>
+                            <li>✓ Safety coordination</li>
+                        </ul>
+                        <button class="btn btn-outline">Find Team</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Hey Ghost" class="footer-logo-img">
+                        <span class="footer-logo-text">Hey Ghost</span>
+                    </div>
+                    <p class="footer-description">
+                        Advanced paranormal investigation platform with professional-grade technology.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Hey Ghost Pro</a></li>
+                        <li><a href="ghost-link.html">Ghost Link</a></li>
+                        <li><a href="my-entity.html">My Entity AI</a></li>
+                        <li><a href="demo.html">Live Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">4K Recording</a></li>
+                        <li><a href="#">Voice Changing</a></li>
+                        <li><a href="#">EMF Detection</a></li>
+                        <li><a href="#">AI Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Submit Locations</a></li>
+                        <li><a href="#">Investigation Reports</a></li>
+                        <li><a href="#">Find Teams</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Hey Ghost. All rights reserved.</p>
+                    <div class="footer-comparison">
+                        <span>Professional paranormal investigation beyond traditional apps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
