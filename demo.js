@@ -1,4 +1,3 @@
-
 // Demo page specific JavaScript
 
 // Demo state
