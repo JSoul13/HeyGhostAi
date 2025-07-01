@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Demo - Hey Ghost Pro</title>
+    <meta name="description" content="Experience Hey Ghost's advanced paranormal investigation technology live. Test 4K recording, voice changing, EMF detection, and AI analysis in real-time.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Hey Ghost Entity" class="logo-icon">
+                <span class="logo-text">Hey Ghost</span>
+                <span class="logo-badge">PRO</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Platform</a></li>
+                <li><a href="demo.html" class="nav-link active">Live Demo</a></li>
+                <li><a href="ghost-link.html" class="nav-link">Locations</a></li>
+                <li><a href="my-entity.html" class="nav-link">AI Analysis</a></li>
+                <li><a href="signup.html" class="nav-link cta-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="demo-main">
+        <div class="demo-container">
+            <!-- Demo Header -->
+            <section class="demo-header">
+                <div class="demo-badge">
+                    <span class="badge-text">Live Interactive Demo</span>
+                </div>
+                <h1>Experience Advanced Paranormal Technology</h1>
+                <p class="demo-subtitle">
+                    Test Hey Ghost's professional-grade features including 4K recording, real-time voice changing, 
+                    EMF monitoring, and AI-powered analysis. All features are fully functional in this demo.
+                </p>
+                <div class="demo-stats">
+                    <div class="demo-stat">
+                        <span class="stat-label">Session Time</span>
+                        <span class="stat-value" id="session-timer">00:00:00</span>
+                    </div>
+                    <div class="demo-stat">
+                        <span class="stat-label">Events Detected</span>
+                        <span class="stat-value" id="event-count">0</span>
+                    </div>
+                    <div class="demo-stat">
+                        <span class="stat-label">System Status</span>
+                        <span class="stat-value status-active">Online</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Demo Grid -->
+            <section class="demo-grid">
+                <!-- 4K Recording Module -->
+                <div class="demo-module recording-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <img src="https://cdn.abacus.ai/images/c9146482-08b2-40aa-b8d4-1f2c8309b49a.png" alt="4K Recording" class="module-icon">
+                            <div>
+                                <h3>4K Ultra HD Recording</h3>
+                                <p>Professional-grade video capture with real-time sensor overlay</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator" id="recording-status"></div>
+                            <span id="recording-status-text">Ready</span>
+                        </div>
+                    </div>
+                    
+                    <div class="recording-interface">
+                        <div class="recording-viewport">
+                            <div class="viewport-screen">
+                                <div class="recording-overlay" id="recording-overlay">
+                                    <div class="overlay-info">
+                                        <div class="timestamp">2024-12-07 15:42:33</div>
+                                        <div class="recording-indicator" id="rec-indicator">● REC</div>
+                                    </div>
+                                    <div class="sensor-overlay">
+                                        <div class="sensor-reading">
+                                            <span class="sensor-label">EMF:</span>
+                                            <span class="sensor-value" id="overlay-emf">0.0 mG</span>
+                                        </div>
+                                        <div class="sensor-reading">
+                                            <span class="sensor-label">TEMP:</span>
+                                            <span class="sensor-value">72.3°F</span>
+                                        </div>
+                                        <div class="sensor-reading">
+                                            <span class="sensor-label">AUDIO:</span>
+                                            <span class="sensor-value" id="overlay-audio">-42 dB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="viewport-content">
+                                    <div class="simulated-camera">
+                                        <img src="https://cdn.abacus.ai/images/9d4c9d69-7c9f-4ae1-be17-50388f4e5a07.png" alt="Investigation View" class="camera-feed">
+                                        <div class="paranormal-overlay" id="paranormal-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recording-controls">
+                            <button class="control-btn primary" id="record-btn">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                <span>Start 4K Recording</span>
+                            </button>
+                            <button class="control-btn secondary" id="screenshot-btn">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                    <circle cx="12" cy="13" r="4"/>
+                                </svg>
+                                <span>Capture</span>
+                            </button>
+                        </div>
+                        
+                        <div class="recording-settings">
+                            <div class="setting-group">
+                                <label>Resolution:</label>
+                                <select id="resolution-select">
+                                    <option value="4k">4K Ultra HD (3840×2160)</option>
+                                    <option value="1080p">Full HD (1920×1080)</option>
+                                    <option value="720p">HD (1280×720)</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label>Frame Rate:</label>
+                                <select id="framerate-select">
+                                    <option value="60">60 FPS</option>
+                                    <option value="30">30 FPS</option>
+                                    <option value="24">24 FPS</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label>Overlay Data:</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" id="emf-overlay" checked> EMF Readings</label>
+                                    <label><input type="checkbox" id="timestamp-overlay" checked> Timestamp</label>
+                                    <label><input type="checkbox" id="sensor-overlay" checked> Sensor Data</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EMF Detection Module -->
+                <div class="demo-module emf-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <img src="https://cdn.abacus.ai/images/0da87d48-51f5-4293-8fbb-7c15463e8c64.png" alt="EMF Detection" class="module-icon">
+                            <div>
+                                <h3>Professional EMF Monitor</h3>
+                                <p>High-precision electromagnetic field detection with AI analysis</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator" id="emf-status"></div>
+                            <span id="emf-status-text">Standby</span>
+                        </div>
+                    </div>
+                    
+                    <div class="emf-interface">
+                        <div class="emf-display">
+                            <div class="emf-reading-main">
+                                <div class="reading-value">
+                                    <span class="emf-value" id="emf-value">0.0</span>
+                                    <span class="emf-unit">mG</span>
+                                </div>
+                                <div class="reading-status">
+                                    <span class="status-text" id="emf-reading-status">Normal</span>
+                                </div>
+                            </div>
+                            
+                            <div class="emf-visual">
+                                <div class="emf-meter">
+                                    <div class="meter-scale">
+                                        <div class="scale-mark" style="left: 0%"><span>0</span></div>
+                                        <div class="scale-mark" style="left: 25%"><span>25</span></div>
+                                        <div class="scale-mark" style="left: 50%"><span>50</span></div>
+                                        <div class="scale-mark" style="left: 75%"><span>75</span></div>
+                                        <div class="scale-mark" style="left: 100%"><span>100</span></div>
+                                    </div>
+                                    <div class="meter-bar">
+                                        <div class="meter-fill" id="emf-meter-fill"></div>
+                                        <div class="meter-needle" id="emf-needle"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="emf-waveform">
+                                    <canvas id="emf-canvas" width="300" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="emf-controls">
+                            <button class="control-btn primary" id="emf-start">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                <span>Start Detection</span>
+                            </button>
+                            <button class="control-btn secondary" id="emf-calibrate">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                </svg>
+                                <span>Calibrate</span>
+                            </button>
+                        </div>
+                        
+                        <div class="emf-log">
+                            <h4>Recent Activity</h4>
+                            <div class="log-container" id="emf-log-entries">
+                                <div class="log-entry">
+                                    <span class="log-time">15:41:22</span>
+                                    <span class="log-event">System initialized</span>
+                                    <span class="log-value">0.0 mG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voice Processing Module -->
+                <div class="demo-module voice-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <img src="https://cdn.abacus.ai/images/d279cc31-66a7-4e27-9fe4-ba7fb6a8f58f.png" alt="Voice Processing" class="module-icon">
+                            <div>
+                                <h3>Advanced Voice Processing</h3>
+                                <p>Real-time voice changing, EVP detection, and frequency analysis</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator" id="voice-status"></div>
+                            <span id="voice-status-text">Ready</span>
+                        </div>
+                    </div>
+                    
+                    <div class="voice-interface">
+                        <div class="voice-waveform">
+                            <canvas id="voice-canvas" width="400" height="150"></canvas>
+                            <div class="waveform-controls">
+                                <button class="waveform-btn" id="voice-record">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                        <line x1="12" y1="19" x2="12" y2="23"/>
+                                        <line x1="8" y1="23" x2="16" y2="23"/>
+                                    </svg>
+                                </button>
+                                <button class="waveform-btn" id="voice-play">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"/>
+                                    </svg>
+                                </button>
+                                <button class="waveform-btn" id="voice-analyze">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="voice-effects">
+                            <h4>Real-time Voice Changing</h4>
+                            <div class="effect-grid">
+                                <button class="effect-btn" data-effect="normal">Normal</button>
+                                <button class="effect-btn" data-effect="deep">Deep Voice</button>
+                                <button class="effect-btn" data-effect="high">High Pitch</button>
+                                <button class="effect-btn" data-effect="whisper">Whisper</button>
+                                <button class="effect-btn" data-effect="reverb">Reverb</button>
+                                <button class="effect-btn active" data-effect="spirit">Spirit Mode</button>
+                            </div>
+                            
+                            <div class="effect-controls">
+                                <div class="control-slider">
+                                    <label>Pitch Shift:</label>
+                                    <input type="range" id="pitch-slider" min="-12" max="12" value="0">
+                                    <span id="pitch-value">0</span>
+                                </div>
+                                <div class="control-slider">
+                                    <label>Reverb:</label>
+                                    <input type="range" id="reverb-slider" min="0" max="100" value="20">
+                                    <span id="reverb-value">20%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="evp-analysis">
+                            <h4>EVP Analysis Results</h4>
+                            <div class="analysis-container" id="evp-results">
+                                <div class="analysis-placeholder">
+                                    <p>Start voice analysis to detect potential EVP patterns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spirit Communication Module -->
+                <div class="demo-module spirit-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Spirit Communication" class="module-icon">
+                            <div>
+                                <h3>Spirit Communication</h3>
+                                <p>AI-enhanced spirit interaction with advanced response algorithms</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator active" id="spirit-status"></div>
+                            <span id="spirit-status-text">Connected</span>
+                        </div>
+                    </div>
+                    
+                    <div class="spirit-interface">
+                        <div class="spirit-chat">
+                            <div class="chat-container" id="spirit-messages">
+                                <div class="spirit-message system">
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="sender">System</span>
+                                            <span class="timestamp">15:41:30</span>
+                                        </div>
+                                        <p>Spirit communication interface initialized. Ready for contact.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spirit-input-area">
+                            <div class="input-group">
+                                <input type="text" id="spirit-input" placeholder="Type your message to spirits..." class="spirit-text-input">
+                                <button class="send-btn" id="spirit-send">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="22" y1="2" x2="11" y2="13"/>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="spirit-suggestions">
+                            <h4>Quick Questions</h4>
+                            <div class="suggestion-grid">
+                                <button class="suggestion-btn">Are you here with us?</button>
+                                <button class="suggestion-btn">What is your name?</button>
+                                <button class="suggestion-btn">Can you give us a sign?</button>
+                                <button class="suggestion-btn">How did you pass away?</button>
+                                <button class="suggestion-btn">Do you have a message?</button>
+                                <button class="suggestion-btn">Are you at peace?</button>
+                            </div>
+                        </div>
+                        
+                        <div class="spirit-analytics">
+                            <h4>Communication Analytics</h4>
+                            <div class="analytics-grid">
+                                <div class="analytic-item">
+                                    <span class="analytic-label">Response Rate:</span>
+                                    <span class="analytic-value" id="response-rate">0%</span>
+                                </div>
+                                <div class="analytic-item">
+                                    <span class="analytic-label">Activity Level:</span>
+                                    <span class="analytic-value" id="activity-level">Low</span>
+                                </div>
+                                <div class="analytic-item">
+                                    <span class="analytic-label">Messages Sent:</span>
+                                    <span class="analytic-value" id="messages-sent">0</span>
+                                </div>
+                                <div class="analytic-item">
+                                    <span class="analytic-label">Responses:</span>
+                                    <span class="analytic-value" id="responses-received">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Analysis Module -->
+                <div class="demo-module analysis-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <div class="module-icon ai-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>AI Analysis Engine</h3>
+                                <p>Machine learning-powered pattern recognition and anomaly detection</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator active" id="ai-status"></div>
+                            <span id="ai-status-text">Processing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-interface">
+                        <div class="analysis-overview">
+                            <h4>Real-time Analysis</h4>
+                            <div class="analysis-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Anomaly Score</div>
+                                    <div class="metric-value" id="anomaly-score">0.3</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" id="anomaly-fill" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Pattern Match</div>
+                                    <div class="metric-value" id="pattern-score">0.7</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" id="pattern-fill" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Confidence</div>
+                                    <div class="metric-value" id="confidence-score">0.9</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" id="confidence-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="analysis-results">
+                            <h4>Detection Results</h4>
+                            <div class="results-container" id="analysis-results">
+                                <div class="result-item">
+                                    <div class="result-header">
+                                        <span class="result-type">Pattern Detected</span>
+                                        <span class="result-confidence">89%</span>
+                                    </div>
+                                    <div class="result-description">
+                                        Recurring EMF fluctuation pattern identified at 2.3Hz frequency
+                                    </div>
+                                    <div class="result-timestamp">15:41:45</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-header">
+                                        <span class="result-type">Audio Anomaly</span>
+                                        <span class="result-confidence">72%</span>
+                                    </div>
+                                    <div class="result-description">
+                                        Unusual frequency spike detected in audio spectrum analysis
+                                    </div>
+                                    <div class="result-timestamp">15:41:28</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="analysis-controls">
+                            <button class="control-btn primary" id="start-analysis">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                                </svg>
+                                <span>Start Deep Analysis</span>
+                            </button>
+                            <button class="control-btn secondary" id="export-analysis">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span>Export Data</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session Logging Module -->
+                <div class="demo-module session-module">
+                    <div class="module-header">
+                        <div class="module-info">
+                            <div class="module-icon session-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10,9 9,9 8,9"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Session Logging</h3>
+                                <p>Comprehensive data logging with separate audio, EMF, and event tracking</p>
+                            </div>
+                        </div>
+                        <div class="module-status">
+                            <div class="status-indicator active" id="session-status"></div>
+                            <span id="session-status-text">Logging</span>
+                        </div>
+                    </div>
+                    
+                    <div class="session-interface">
+                        <div class="session-summary">
+                            <div class="summary-item">
+                                <span class="summary-label">Session Duration:</span>
+                                <span class="summary-value" id="session-duration">00:00:00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Total Events:</span>
+                                <span class="summary-value" id="total-events">0</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Data Size:</span>
+                                <span class="summary-value" id="data-size">0 MB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="session-logs">
+                            <h4>Event Log</h4>
+                            <div class="log-filter">
+                                <select id="log-filter">
+                                    <option value="all">All Events</option>
+                                    <option value="emf">EMF Only</option>
+                                    <option value="voice">Voice Only</option>
+                                    <option value="spirit">Spirit Only</option>
+                                    <option value="system">System Only</option>
+                                </select>
+                            </div>
+                            <div class="log-container" id="session-entries">
+                                <div class="log-entry">
+                                    <span class="log-time">15:41:30</span>
+                                    <span class="log-type system">SYSTEM</span>
+                                    <span class="log-description">Demo session initialized</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="session-controls">
+                            <button class="control-btn primary" id="save-session">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                    <polyline points="17,21 17,13 7,13 7,21"/>
+                                    <polyline points="7,3 7,8 15,8"/>
+                                </svg>
+                                <span>Save Session</span>
+                            </button>
+                            <button class="control-btn secondary" id="export-session">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17,8 12,3 7,8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                <span>Export Data</span>
+                            </button>
+                            <button class="control-btn outline" id="clear-session">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19,6v14a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6m3,0V4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2V6"/>
+                                </svg>
+                                <span>Clear Log</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Demo Footer -->
+            <section class="demo-footer">
+                <div class="demo-cta">
+                    <h3>Ready to Experience the Full Platform?</h3>
+                    <p>This demo showcases Hey Ghost's advanced capabilities. Get the complete professional paranormal investigation suite with unlimited recording, cloud storage, and team collaboration features.</p>
+                    <div class="demo-buttons">
+                        <a href="signup.html" class="btn btn-primary">
+                            <span>Start Free Trial</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="index.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="demo-features">
+                        <div class="demo-feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Unlimited 4K recording</span>
+                        </div>
+                        <div class="demo-feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Cloud storage & sync</span>
+                        </div>
+                        <div class="demo-feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Team collaboration</span>
+                        </div>
+                        <div class="demo-feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Advanced AI models</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://cdn.abacus.ai/images/3f07b840-8c86-4b95-9892-73aa44fce658.png" alt="Hey Ghost" class="footer-logo-img">
+                        <span class="footer-logo-text">Hey Ghost</span>
+                    </div>
+                    <p class="footer-description">
+                        Advanced paranormal investigation platform with professional-grade technology.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Hey Ghost Pro</a></li>
+                        <li><a href="demo.html">Live Demo</a></li>
+                        <li><a href="signup.html">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">4K Recording</a></li>
+                        <li><a href="#">Voice Changing</a></li>
+                        <li><a href="#">EMF Detection</a></li>
+                        <li><a href="#">AI Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Hey Ghost. All rights reserved.</p>
+                    <div class="footer-comparison">
+                        <span>Advanced technology beyond Ghost Tube capabilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
