@@ -1,4 +1,3 @@
-
 // Main JavaScript file for Hey Ghost website
 
 // DOM Ready
