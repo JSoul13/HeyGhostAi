@@ -1,0 +1,255 @@
+[
+  {
+    "website": "MyEntityAI",
+    "url": "https://jsoul13.github.io/MyEntityai/",
+    "screenshot": "site1_myentityai.png",
+    "title": "Entity: The Paranormal Evidence AI",
+    "metaDescription": "",
+    "fontFamilies": [
+      "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "\"Courier New\", monospace",
+      "Creepster, Chiller, Nosifer, cursive"
+    ],
+    "colors": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "headerColors": [
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "buttonColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(236, 72, 153)"
+        },
+        {
+          "color": "rgb(209, 213, 219)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(209, 213, 219)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(209, 213, 219)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(209, 213, 219)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "hasNavigation": true,
+    "hasHero": false,
+    "hasCards": false,
+    "hasFooter": false
+  },
+  {
+    "website": "GhostLink",
+    "url": "https://jsoul13.github.io/GhostLink/",
+    "screenshot": "site2_ghostlink.png",
+    "title": "Haunted Locations App",
+    "metaDescription": "",
+    "fontFamilies": [
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    ],
+    "colors": {
+      "background": "rgb(17, 24, 39)",
+      "color": "rgb(0, 0, 0)",
+      "headerColors": [
+        {
+          "color": "rgb(244, 114, 182)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(244, 114, 182)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(244, 114, 182)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "buttonColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(219, 39, 119)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(202, 138, 4)"
+        },
+        {
+          "color": "rgb(244, 114, 182)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(156, 163, 175)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(156, 163, 175)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "hasNavigation": false,
+    "hasHero": false,
+    "hasCards": false,
+    "hasFooter": false
+  },
+  {
+    "website": "MyEntity2",
+    "url": "https://jsoul13.github.io/MyEntity2/",
+    "screenshot": "site3_myentity2.png",
+    "title": "Entity AI Video Analysis Demo",
+    "metaDescription": "",
+    "fontFamilies": [
+      "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "\"Courier New\", monospace",
+      "Creepster, Chiller, Nosifer, cursive",
+      "\"Font Awesome 6 Free\""
+    ],
+    "colors": {
+      "background": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "headerColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgba(0, 0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(196, 181, 253)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(196, 181, 253)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(196, 181, 253)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "buttonColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(75, 85, 99)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "hasNavigation": false,
+    "hasHero": false,
+    "hasCards": false,
+    "hasFooter": false
+  },
+  {
+    "website": "GhostTube",
+    "url": "https://ghosttube.com/products/ghosttube-original",
+    "screenshot": "site4_ghosttube.png",
+    "title": "GhostTube Original",
+    "metaDescription": "This app can be downloaded for free GhostTube uses your mobile device's actual sensors to detect fluctuations in the environment, select words from the pre-populated data bank, and track audio recordings during your paranormal investigations. No special sound or visual FX added - Just raw readings from your device. Rea",
+    "fontFamilies": [
+      "\"Times New Roman\""
+    ],
+    "colors": {
+      "background": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.75)",
+      "headerColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "buttonColors": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.75)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    "hasNavigation": true,
+    "hasHero": false,
+    "hasCards": false,
+    "hasFooter": true
+  }
+]
